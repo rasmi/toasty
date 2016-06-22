@@ -13,7 +13,7 @@ def save_png(pth, array):
     array : array-like
        Image to save
     """
-    Image.fromarray(array).save(pth)
+    Image.fromarray(array).convert('RGB').save(pth)
 
 
 def read_png(pth):
